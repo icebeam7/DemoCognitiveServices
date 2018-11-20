@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoCognitiveServices.Paginas.Face.PaginaGrupo"
+             Title="Grupo">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White" Padding="5" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Crear grupo" Clicked="btnGroup_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

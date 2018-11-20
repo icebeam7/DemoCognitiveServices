@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoCognitiveServices.Paginas.Face.PaginaRegistroPersona"
+             Title="Registrar persona">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White" Padding="5" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Nombre de la persona: " 
+                   Style="{StaticResource LabelTitleStyle}"/>
+            <Entry Grid.Row="0" Grid.Column="1" x:Name="txtNombrePersona"   />
+
+            <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="Agregar persona" Clicked="btnAgregar_Clicked"/>
+
+            <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Tomar foto" Clicked="btnFoto_Clicked"/>
+            <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="Seleccionar foto" Clicked="btnFoto_Clicked"/>
+            <Image Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" x:Name="imgFoto" WidthRequest="150" HeightRequest="150" Aspect="AspectFit"/>
+
+            <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Text="Analizar foto" Clicked="btnObtenerInfo_Clicked"/>
+            <Button Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Text="Registrar foto" Clicked="btnRegistrar_Clicked"/>
+            <Button Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Text="Entrenar modelo" Clicked="btnEntrenar_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

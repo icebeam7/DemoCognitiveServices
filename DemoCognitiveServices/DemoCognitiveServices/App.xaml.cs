@@ -11,7 +11,7 @@ namespace DemoCognitiveServices
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Paginas.Face.PaginaFaceTutorial());
         }
 
         protected override void OnStart()
